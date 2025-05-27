@@ -37,6 +37,7 @@ Allocate Host Memory
 22.	Reset the device using cudaDeviceReset and return from the main function.
 
 ## PROGRAM:
+```
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc4jupyter
 
@@ -190,6 +191,7 @@ __global__ void sumMatrixGPU(float *MatA, float *MatB, float *MatC, int nx,
         MatC[idx] = MatA[idx] + MatB[idx];
 
 }
+```
 
 int main(int argc, char **argv)
 {
